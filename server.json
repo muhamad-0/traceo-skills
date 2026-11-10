@@ -1,0 +1,16 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.muhamad-0/traceo",
+  "title": "Traceo",
+  "description": "Traceo bug recordings (console, network, user actions, environment) as context for your coding agent.",
+  "version": "0.1.0",
+  "websiteUrl": "https://www.traceo.dev",
+  "repository": { "url": "https://github.com/muhamad-0/traceo-skills", "source": "github" },
+  "icons": [
+    { "src": "https://traceo-video-share-worker.iusmankh.workers.dev/logo.svg", "mimeType": "image/svg+xml", "sizes": ["any"] },
+    { "src": "https://traceo-video-share-worker.iusmankh.workers.dev/logo.png", "mimeType": "image/png", "sizes": ["512x512"] }
+  ],
+  "remotes": [
+    { "type": "streamable-http", "url": "https://traceo-video-share-worker.iusmankh.workers.dev/mcp" }
+  ]
+}

@@ -1,3 +1,7 @@
+<p align="center">
+  <a href="https://www.traceo.dev"><img src="./assets/logo.png" alt="Traceo" width="88" height="88"></a>
+</p>
+
 <h1 align="center">Traceo skills</h1>
 
 <p align="center">

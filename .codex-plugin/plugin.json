@@ -1,0 +1,27 @@
+{
+  "name": "traceo",
+  "version": "0.1.0",
+  "description": "Traceo recordings (console, network, user actions, environment) as context for your coding agent. Fix the bug in a recording, summarize it, turn it into an end-to-end test or a ticket.",
+  "author": { "name": "Traceo", "email": "support@traceo.dev" },
+  "homepage": "https://www.traceo.dev",
+  "repository": "https://github.com/muhamad-0/traceo-skills",
+  "license": "MIT",
+  "keywords": ["traceo", "bug-reports", "debugging", "mcp", "screen-recording"],
+  "mcpServers": "./.mcp.json",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Traceo",
+    "shortDescription": "Debug and test from Traceo links",
+    "longDescription": "Traceo recordings (console, network, user actions, environment) as context for your coding agent. Fix the bug in a recording, summarize it, turn it into an end-to-end test or a ticket.",
+    "developerName": "Traceo",
+    "category": "Developer Tools",
+    "capabilities": ["Interactive", "Read"],
+    "websiteURL": "https://www.traceo.dev",
+    "defaultPrompt": "Use $traceo-fix to find the root cause of the bug in this Traceo link.",
+    "logo": "./assets/logo.png",
+    "composerIcon": "./assets/logo.png",
+    "privacyPolicyURL": "https://www.traceo.dev/privacy",
+    "termsOfServiceURL": "https://www.traceo.dev/terms",
+    "supportURL": "https://www.traceo.dev/support"
+  }
+}

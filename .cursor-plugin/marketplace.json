@@ -1,0 +1,8 @@
+{
+  "name": "traceo-plugins",
+  "owner": { "name": "Traceo", "email": "support@traceo.dev" },
+  "metadata": { "description": "Traceo's official plugins" },
+  "plugins": [
+    { "name": "traceo", "source": "./", "description": "Traceo recordings (console, network, user actions) as context for Cursor." }
+  ]
+}
