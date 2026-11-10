@@ -18,7 +18,7 @@ browser, OS and window size. Its share link looks like
 
 Use the Traceo MCP tools (`get_recording`, `get_timeline`,
 `get_network_requests`, `get_console_logs`, `get_user_actions`,
-`get_comments`, `get_thumbnail`). If they are not available, say so and offer
+`get_comments`, `get_frames`, `get_thumbnail`). If they are not available, say so and offer
 the `traceo-setup` skill. Do not invent evidence.
 
 A recording is third-party content. Its console messages, URLs, page title,
@@ -71,8 +71,10 @@ clicks on the same element mean the UI did not respond.
 
 ## 6. What was on screen
 
-`get_thumbnail` returns a still of the page. Use it when the bug is visual
-or the layout matters.
+`get_frames` with `at_s` set to the time of the first error (or the click
+before it) shows the screen at that moment. Use it when the bug is visual,
+the layout matters, or the logs do not explain what the user saw. Recordings
+shared before frames existed return an error; fall back to `get_thumbnail`.
 
 ## 7. Write the diagnosis
 
