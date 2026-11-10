@@ -1,0 +1,13 @@
+{
+  "name": "traceo",
+  "version": "0.1.0",
+  "description": "Traceo recordings (console, network, user actions, environment) as context for your coding agent. Fix the bug in a recording, summarize it, turn it into an end-to-end test or a ticket.",
+  "author": { "name": "Traceo", "email": "support@traceo.dev" },
+  "homepage": "https://www.traceo.dev",
+  "repository": "https://github.com/muhamad-0/traceo-skills",
+  "license": "MIT",
+  "keywords": ["traceo", "bug-reports", "debugging", "mcp", "screen-recording", "qa"],
+  "mcpServers": {
+    "traceo": { "type": "http", "url": "https://traceo-video-share-worker.iusmankh.workers.dev/mcp" }
+  }
+}
