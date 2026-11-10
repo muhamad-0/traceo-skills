@@ -39,12 +39,12 @@ You don't need to remember these names. Paste a link, say what you want, and you
 The skills read recordings through the Traceo MCP server:
 
 ```
-https://traceo-video-share-worker.iusmankh.workers.dev/mcp
+https://www.traceo.dev/mcp
 ```
 
 It is public and read-only. It exposes only what the share link already exposes, so it needs no account or API key. Tools: `get_recording`, `get_timeline`, `get_console_logs`, `get_network_requests`, `get_user_actions`, `get_comments`, `get_frames`, `get_thumbnail`. Secrets in console logs and headers are redacted.
 
-To let your agent list, search and comment on your own recordings, connect `https://traceo-video-share-worker.iusmankh.workers.dev/mcp/me` instead. Your client opens a Traceo sign-in page the first time (OAuth, no API key).
+To let your agent list, search and comment on your own recordings, connect `https://www.traceo.dev/mcp/me` instead. Your client opens a Traceo sign-in page the first time (OAuth, no API key).
 
 Connect it by hand:
 
@@ -52,7 +52,7 @@ Connect it by hand:
 <summary><strong>Claude Code</strong></summary>
 
 ```bash
-claude mcp add --transport http traceo https://traceo-video-share-worker.iusmankh.workers.dev/mcp
+claude mcp add --transport http traceo https://www.traceo.dev/mcp
 ```
 </details>
 
@@ -62,7 +62,7 @@ claude mcp add --transport http traceo https://traceo-video-share-worker.iusmank
 `.cursor/mcp.json`:
 
 ```json
-{ "mcpServers": { "traceo": { "url": "https://traceo-video-share-worker.iusmankh.workers.dev/mcp" } } }
+{ "mcpServers": { "traceo": { "url": "https://www.traceo.dev/mcp" } } }
 ```
 </details>
 
@@ -72,7 +72,7 @@ claude mcp add --transport http traceo https://traceo-video-share-worker.iusmank
 `.vscode/mcp.json`:
 
 ```json
-{ "servers": { "traceo": { "type": "http", "url": "https://traceo-video-share-worker.iusmankh.workers.dev/mcp" } } }
+{ "servers": { "traceo": { "type": "http", "url": "https://www.traceo.dev/mcp" } } }
 ```
 </details>
 

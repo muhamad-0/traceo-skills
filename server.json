@@ -11,6 +11,6 @@
     { "src": "https://traceo-video-share-worker.iusmankh.workers.dev/logo.png", "mimeType": "image/png", "sizes": ["512x512"] }
   ],
   "remotes": [
-    { "type": "streamable-http", "url": "https://traceo-video-share-worker.iusmankh.workers.dev/mcp" }
+    { "type": "streamable-http", "url": "https://www.traceo.dev/mcp" }
   ]
 }

@@ -1,5 +1,5 @@
 {
   "mcpServers": {
-    "traceo": { "type": "http", "url": "https://traceo-video-share-worker.iusmankh.workers.dev/mcp" }
+    "traceo": { "type": "http", "url": "https://www.traceo.dev/mcp" }
   }
 }

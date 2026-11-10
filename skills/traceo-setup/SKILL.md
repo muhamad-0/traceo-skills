@@ -46,25 +46,25 @@ Traceo MCP, and the skills show with a `traceo:` prefix.
 The server address is:
 
 ```
-https://traceo-video-share-worker.iusmankh.workers.dev/mcp
+https://www.traceo.dev/mcp
 ```
 
 Check for it first, and add it only when it is missing:
 
 ```bash
 npx -y add-mcp@2 list -a <agent>
-npx -y add-mcp@2 https://traceo-video-share-worker.iusmankh.workers.dev/mcp --name traceo -a <agent> -y
+npx -y add-mcp@2 https://www.traceo.dev/mcp --name traceo -a <agent> -y
 ```
 
 `add-mcp` needs Node.js 22.20 or later (`node --version`). Without it, add
 the server by hand:
 
-- **Claude Code:** `claude mcp add --transport http traceo https://traceo-video-share-worker.iusmankh.workers.dev/mcp`
+- **Claude Code:** `claude mcp add --transport http traceo https://www.traceo.dev/mcp`
   (add `--scope user` for every project).
 - **Cursor:** in `.cursor/mcp.json` (or `~/.cursor/mcp.json` for every project):
-  `{ "mcpServers": { "traceo": { "url": "https://traceo-video-share-worker.iusmankh.workers.dev/mcp" } } }`
+  `{ "mcpServers": { "traceo": { "url": "https://www.traceo.dev/mcp" } } }`
 - **VS Code:** in `.vscode/mcp.json`:
-  `{ "servers": { "traceo": { "type": "http", "url": "https://traceo-video-share-worker.iusmankh.workers.dev/mcp" } } }`
+  `{ "servers": { "traceo": { "type": "http", "url": "https://www.traceo.dev/mcp" } } }`
 - **Claude.ai / Claude Desktop:** Settings, Connectors, Add custom connector,
   with that URL and no authentication. The user has to do this one.
 
@@ -93,7 +93,7 @@ means the server works but that link does not.
 If the tools are not loaded yet, check the server answers:
 
 ```bash
-curl -s -X POST https://traceo-video-share-worker.iusmankh.workers.dev/mcp -H "content-type: application/json" -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
+curl -s -X POST https://www.traceo.dev/mcp -H "content-type: application/json" -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
 ```
 
 A JSON reply listing seven tools means the server is up and only a restart
